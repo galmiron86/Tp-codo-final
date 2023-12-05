@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/validacion.css" />
+  <title>Clases en línea</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <p class="logo"><a href="../index.html" class="titulo">Clases en línea</a></p>
+      <a href="../index.html"><img src="../iconos/ordenador-portatil.png" alt="laptop" class="icono"></a>
+      <nav>
+        <a href="../index.html#somos-proya">Quiénes somos</a>
+        <a href="../index.html#nuestros-programas">Nuestros Programas</a>
+        <a href="../index.html#caracteristicas">Características</a>
+        <a href="registro.html">Registro</a>
+        <a href="login.html">Entrar</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <h1 class="titulo__form">Formulario de registro</h1>
+
+
+  <form id="formulario" onsubmit="return validarFormulario()" action="https://formspree.io/f/xvojdbzq" method="post"
+    target="_blank">
+    <label for="nombre">Primer Nombre</label>
+    <input type="text" id="nombre" name="nombre"><br>
+
+    <label for="dni">DNI</label>
+    <input type="text" name="dni" id="dni" ><br>
+
+    <label for="direccion">Dirección</label>
+    <input type="text" id="direccion" name="direccion"><br>
+
+    <input type="submit" value="Enviar" onclick="guardar()">
+  </form>
+
+  
+
+
+
+  <br><br>
+ </div>
+ 
+  <footer>
+    <div class="icon__text">
+      <div class="icon__social">
+        <a href="https://www.instagram.com/" target="_blank"><img src="../iconos/instagram.png" alt="instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../iconos/facebook.png" alt="facebook"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="../iconos/whatsapp.png" alt="whatsapp"></a>
+        <div id="clima" class="clima__api"></div>
+      </div>
+      <div class="container">
+        <p>&copy; Codo a Codo 2023</p>
+      </div> 
+    </div>
+  </footer>
+  <script src="../js/api_consumo.js"></script>
+  <script src="../js/validacion.js"></script>
+  <script src="../js/ingresar_persona.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+  <link rel="stylesheet" href="../css/tabla.css" />
+  <title>Clases en línea</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <p class="logo"><a href="../index.html" class="titulo">Clases en línea</a></p>
+      <a href="../index.html"><img src="../iconos/ordenador-portatil.png" alt="laptop" class="icono"></a>
+      <nav>
+        <a href="../index.html#somos-proya">Quiénes somos</a>
+        <a href="../index.html#nuestros-programas">Nuestros Programas</a>
+        <a href="../index.html#caracteristicas">Características</a>
+        <a href="registro.html">Registro</a>
+        <a href="login.html">Entrar</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="container">
+        <div id="app" >
+
+            <!-- Botón Nuevo -->
+            <a class="nuevo" href="../template/registro.html">Nuevo</a>
+
+            <section v-if="error">Lo sentimos se produjo un error</section>
+            <section v-else>
+                <section v-if="cargando">
+                    <p>Cargando .....</p>
+
+                </section>
+
+                <section v-else>
+                    
+                    <div >
+                        <table class="tabla">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>DNI</th>
+                                    <th>direccion</th>
+                                    <th>Acciones</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               
+                                <tr v-for="producto in productos">
+                                    <td >{{producto.id}}</td>
+                                    <td>{{producto.nombre}}</td>
+                                    <td>{{producto.dni}}</td>
+                                    <td>{{producto.direccion}}</td>
+                                    <td>
+                                        <button type="button"  v-on:click="eliminar(producto.id)">Eliminar</button>
+                                    </td>
+                                    <td>
+                                        <a class="boton" :href="'editar_producto.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&dni='+producto.dni+'&direccion='+producto.direccion">Editar</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </section>
+
+        </div>  
+    </section>
+
+</main>
+
+
+    <footer>
+        <div class="icon__text">
+          <div class="icon__social">
+            <a href="https://www.instagram.com/" target="_blank"><img src="../iconos/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../iconos/facebook.png" alt="facebook"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="../iconos/whatsapp.png" alt="whatsapp"></a>
+            <div id="clima" class="clima__api"></div>
+          </div>
+          <div class="container">
+            <p>&copy; Codo a Codo 2023</p>
+          </div> 
+        </div> 
+      </footer>
+      <script src="../js/api_consumo.js"></script>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+      <script src="../js/personas.js"></script>
+     
+</body>
+</html>

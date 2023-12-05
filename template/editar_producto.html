@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+  <link rel="stylesheet" href="../css/validacion.css" />
+  <title>Clases en línea</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <p class="logo"><a href="../index.html" class="titulo">Clases en línea</a></p>
+      <a href="../index.html"><img src="../iconos/ordenador-portatil.png" alt="laptop" class="icono"></a>
+      <nav>
+        <a href="../index.html#somos-proya">Quiénes somos</a>
+        <a href="../index.html#nuestros-programas">Nuestros Programas</a>
+        <a href="../index.html#caracteristicas">Características</a>
+        <a href="registro.html">Registro</a>
+        <a href="login.html">Entrar</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <h1 class="titulo__form">Editar Tabla</h1>
+
+
+ <form action="" id="formulario">
+    <label for="id">ID</label>
+    <input type="text" name="id" id="id" disabled>
+
+
+
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre">
+
+
+
+    <label for="dni">DNI:</label>
+    <input type="text" name="dni" id="dni">
+
+
+
+    <label for="direccion">Direccion:</label>
+    <input type="text" name="direccion" id="direccion">
+
+
+    <button class="modificar" type="button" onclick="modificar()">Modificar</button>
+  </form>
+
+  
+
+
+
+  <br><br>
+ </div>
+ 
+  <footer>
+    <div class="icon__text">
+      <div class="icon__social">
+        <a href="https://www.instagram.com/" target="_blank"><img src="../iconos/instagram.png" alt="instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../iconos/facebook.png" alt="facebook"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="../iconos/whatsapp.png" alt="whatsapp"></a>
+        <div id="clima" class="clima__api"></div>
+      </div>
+      <div class="container">
+        <p>&copy; Codo a Codo 2023</p>
+      </div> 
+    </div>
+  </footer>
+  <script src="../js/api_consumo.js"></script>
+  <script src="../js/editar_persona.js"></script>
+  <script src="../js/datos_editar.js"></script>
+</body>
+
+</html>

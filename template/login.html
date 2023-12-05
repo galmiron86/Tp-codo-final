@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Clases en línea</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <p class="logo"><a href="../index.html" class="titulo">Clases en línea</a></p>
+      <a href="../index.html"><img src="../iconos/ordenador-portatil.png" alt="laptop" class="icono"></a>
+      <nav>
+        <a href="../index.html#somos-proya">Quiénes somos</a>
+        <a href="../index.html#nuestros-programas">Nuestros Programas</a>
+        <a href="../index.html#caracteristicas">Características</a>
+        <a href="registro.html">Registro</a>
+        <a href="login.html">Entrar</a>
+        
+      </nav>
+    </div>
+  </header>
+  <div class="ingreso">
+    <div class="ingreso__text">
+      <h2>Ingresá tu usuario y contraseña de Clases online</h2>
+      <hr>
+      <br>
+      <a href="#" target="_blank">
+        <h6>Reportar un problema</h6>
+      </a>
+    </div>
+
+    <div class="ingreso__user">
+      <form id="loginForm">
+      <p>Usuario</p>
+      <div class="ingreso__user-datos">
+          <label for="usuario"></label>
+          <input type="text" id="usuario" name="usuario">
+      </div>
+      <div class="ingreso__user-datos">
+        <p>Contraseña</p>
+        <label for="contraseña"></label>
+        <input type="password" id="contraseña" name="contraseña">
+    </div>
+      <div class="buttons">
+        <div class="botones">
+          <input type="submit" value="Continuar">
+        </div>
+        <div class="boton__crear-cuenta">
+          <a href="registro.html"><input type="button" name="registro" value="Crear cuenta"></a>
+            </div>
+          </div>
+        </form>
+        </div>
+        </div>
+    <footer>
+      <div class="icon__text">
+        <div class="icon__social">
+          <a href="https://www.instagram.com/" target="_blank"><img src="../iconos/instagram.png" alt="instagram"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img src="../iconos/facebook.png" alt="facebook"></a>
+          <a href="https://web.whatsapp.com/" target="_blank"><img src="../iconos/whatsapp.png" alt="whatsapp"></a>
+          <div id="clima" class="clima__api"></div>
+        </div>
+        <div class="container">
+          <p>&copy; Codo a Codo 2023</p>
+        </div>
+      </div>
+    </footer>
+</body>
+ <script src="../js/api_consumo.js"></script>
+    <script src="../js/login.js"></script>
+</html>
